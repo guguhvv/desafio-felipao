@@ -10,23 +10,28 @@ class heroi {
     atacar(){
 
         let ataque
+        let arma
 
             switch(this.tipo.toLowerCase()){
 
                 case "mago":
-                    ataque = "Magia"
+                    ataque = "Magias"
+                    arma="Recebeu Cajado"
                     break
                 
                 case 'guerreiro':
-                    ataque = "Espadada"
+                    ataque = "Espadadas"
+                    arma="Recebeu Espada"
                     break
 
                 case "monge":
                     ataque = "Artes Marcias"
+                    arma = "Aprende artes marciais"
                     break
                    
                 case "ninja":
-                    ataque = "Usou um ninjtsu"
+                    ataque = "ninjtsus e shurikens"
+                    arma ="Aprende a arte ninja"
                     break
 
                 default:
@@ -41,10 +46,11 @@ class heroi {
             console.log(ataque)
         }
         else{
-            console.log(`O ${this.tipo}, cujo nome e: ${this.nome} atacou usando ${ataque}`)
+            console.log(`Ola Heroi: ${this.nome}, ao selecionar a Classe: ${this.tipo} Voce ${arma} e seus ataque são : ${ataque}`)
         }
 
     }
+
 
 }
 
